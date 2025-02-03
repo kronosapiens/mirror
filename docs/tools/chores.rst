@@ -9,11 +9,12 @@ Quickstart
 ----------
 
 1. Set an app events channel
-2. Make a list of 3-5 starter chores/descriptions: dishes, sweeping, etc
-3. Enter the chores using ``Edit Chores List``, and upvote them in the app  channel
-4. Wait 1-2 days for the chores to accumulate points
-5. Encourage people to check current chore values and to ``Claim a Chore`` which is fairly-valued
-6. Encourage people to ``Set Priorities`` if they feel that a chore is being over/under valued
+2. Activate all participating users
+3. Make a list of 3-5 starter chores/descriptions: dishes, sweeping, etc
+4. Enter the chores using ``Edit Chores List``, and upvote them in the app  channel
+5. Wait 1-2 days for the chores to accumulate points
+6. Encourage people to check current chore values and to ``Claim a Chore`` which is fairly-valued
+7. Encourage people to ``Set Priorities`` if they feel that a chore is being over/under valued
 
 Introduction
 ------------
@@ -117,7 +118,7 @@ Basic Functionality
   :align: center
 
 The Chores home page is the chores dashboard.
-On the home page, folks can see their current and owed points for the month, as well as how many people are around that day (i.e. not exempt and not on break).
+On the home page, folks can see their current and owed points for the month, as well as how many people are around that day (i.e. active and not on break).
 The app home is also the entryway into the basic functionality, described below:
 
 :guilabel:`Claim a chore`
@@ -223,18 +224,19 @@ Most people will not need to know about these commands to use Chores.
 
     A channel **must** be set for the app to work.
 
-``/chores-exempt`` \*
-  The ``/chores-exempt`` command is used to mark certain users as "exempt" from chores, i.e. to indicate that someone in the workspace is not actively present in the house and should not be considered for the purposes of issuing points and voting.
-  In the past this has been used to exempt someone who took a four-month leave of absence, and to exempt an admin account belonging to someone not living in the house.
+``/chores-activate`` \*
+  The ``/chores-activate`` command is used by workspace administrators to "activate" users.
+  Workspace members are deactive by default, and must be activated to participate in chores.
+  An active user can claim chores, vote on claims, take breaks, and gift points.
 
 ``/chores-reset`` \*
   The ``/chores-reset`` command is used to reset chore points.
   All chores will be worth 0 points, all users will have 0 points, and all users will owe points as if they had just joined the workspace.
   The chore list and chore priorities will not be affected.
 
-``/chores-sync``
-  The ``/chores-sync`` command will update the app with the current active users in the workspace, adding any new users and removing any who have been deactivated.
-  The app will normally keep itself synchronized in the background, but this command can be used to force a sync if necessary.
+``/chores-prune``
+  The ``/chores-prune`` command will deactivate any users no longer in the workspace.
+  The app will normally prune users in the background, but this command can force a sync if necessary.
 
 Case Studies
 ------------

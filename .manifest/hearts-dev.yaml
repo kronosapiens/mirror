@@ -14,6 +14,9 @@ features:
     - command: /hearts-channel
       url: https://zaratan.ngrok.io/slack/events
       description: Use the current channel for app events
+    - command: /hearts-prune
+      url: https://zaratan.ngrok.io/slack/events
+      description: Prune nonexistent residents
     - command: /hearts-sync
       url: https://zaratan.ngrok.io/slack/events
       description: Sync workspace members or channels

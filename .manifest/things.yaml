@@ -1,5 +1,5 @@
 display_information:
-  name: "Chore Wheel: Things"
+  name: "Chore Wheel - Things"
   description: House accounts for everyone
   background_color: "#bb4f35"
   long_description: Allow for collaborative purchasing out of a shared account. Allows admins to manage a whitelist of items and for residents to make purchases with an auto-scaling quorum based on item price.

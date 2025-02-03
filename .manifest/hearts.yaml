@@ -1,5 +1,5 @@
 display_information:
-  name: "Chore Wheel: Hearts"
+  name: "Chore Wheel - Hearts"
   description: Mutual accountability, but more fun
   background_color: "#ff2f00"
   long_description: Allows for holding each other accountable to mutual commitments and support healthy communication. Prioritizes feedback and growth over punishment, and provides ways to recognize positive contributions.
@@ -14,6 +14,9 @@ features:
     - command: /hearts-channel
       url: https://hearts.mirror.zaratan.world/slack/events
       description: Use the current channel for app events
+    - command: /hearts-prune
+      url: https://hearts.mirror.zaratan.world/slack/events
+      description: Prune nonexistent residents
     - command: /hearts-sync
       url: https://hearts.mirror.zaratan.world/slack/events
       description: Sync workspace members or channels
